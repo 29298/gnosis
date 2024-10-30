@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website:http://ogp.me/ns/website#">
+        <meta charset="utf-8" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <title>Title is coming here</title>
+        <meta name="description" content="contents are coming here" />
+
+        <link rel="canonical" href="#" />
+
+        <link rel="stylesheet" href="dist/hamburgers.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="icon" type="image/x-icon" href="#">
+        <link rel="apple-touch-icon" sizes="180x180" href="#">
+
+        <meta property="og:url" content="#" />
+        <meta property="og:title" content="Title is coming here" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Contents are coming here" />
+        <meta property="og:image" content="#" />
+        <meta property="og:site_name" content="Title is coming here" />
+        <meta property="og:locale" content="ja_JP" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="#" />
+        <meta name="twitter:description" content="Contents are coming here" />
+        <meta name="twitter:image:src" content="#" />
+    </head>
+
+    <body>
+        <div class="signin-up-area">
+            <div class="back-link-area">
+                <div class="back-link">
+                    <a class="back-link-text" href="http://gnosisprep.com/">Go back to home</a>
+                </div>
+            </div>
+
+            <div class="signin-up-toggle-area">
+                <div class="signin-button-area hover-effect">
+                    <button id="signin-btn" class="large open" onclick="signinButton()"><a>Sign in</a></button>
+                </div>
+                <div class="signup-button-area hover-effect">
+                    <button id="signup-btn" class="large" onclick="signupButton()"><a>Sign up</a></button>
+                </div>
+            </div>
+
+            <div id="signup-area">
+                <ul id="signup-container">
+                    <li id="signup-social-media-container">
+                        <div id="signup-social-media">
+                            <a>Sign Up by Social Media</a>
+                            <ul id="signup-social-media-icons">
+                                <li>#</li>
+                                <li>#</li>
+                                <li>#</li>
+                                <li>#</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="section-line-area">
+                        <a class="section-line-caption">or</a>
+                        <div class="section-line-l"></div>
+                        <div class="section-line-r"></div>
+                    </li>
+                    <li id="signup-mail-address">
+                        <a id="signup-mail-address-heading">Mail Address</a>
+                        <div class="signup-mail-address-area">
+                            <div class="textbox">Put your mail address here</div>
+                        </div>
+                    </li>
+                    <li id="signup-password">
+                        <a>Password</a>
+                        <div class="signup-password-area">
+                            <div class="textbox"></div>
+                        </div>
+                    </li>
+                    <div id="signup-next-button">
+                            <button class="simple-btn"><a href="dashboard">Next</a></button>
+                    </div>
+                </ul>
+            </div>
+
+            <div id="signin-area" class="open">
+                <ul id="signin-container">
+                    <li id="signin-mail-address">
+                        <a id="signin-mail-heading">Mail Address</a>
+                        <div class="signin-mail-address-area">
+                            <div class="textbox">Put your mail address here</div>
+                        </div>
+                    </li>
+                    <li id="signin-password">
+                        <a>Password</a>
+                        <div class="textbox"></div>
+                    </li>
+                    <li id="signin-mail-address-nav">
+                        <a id="signin-forgot-password" href="#">Forgot password?</a>
+                    </li>
+                    <div id="signin-next-button">
+                            <button class="simple-btn"><a href="dashboard">Next</a></button>
+                    </div>
+                    <li class="section-line-area">
+                        <a class="section-line-caption">or</a>
+                        <div class="section-line-l"></div>
+                        <div class="section-line-r"></div>
+                    </li>
+                    <li id="signin-social-media-container">
+                        <div id="signin-social-media">
+                            <a id="signin-heading">Sign In by Social Media</a>
+                            <ul id="signin-social-media-icons">
+                                <li>#</li>
+                                <li>#</li>
+                                <li>#</li>
+                                <li>#</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/signin-up-toggle.js"></script>
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function() {
+              hamburger.classList.toggle("is-active");
+              document.querySelector('.header-sp-background').classList.toggle('open');
+            });
+        </script>
+    </body>
+
+</html>
